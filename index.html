@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <title>АкваИнжПроект | Водоснабжение — фиксированные цены</title>
+    <meta name="description" content="Профессиональное водоснабжение для дома и бизнеса. Фиксированные цены. Проектирование, монтаж, обслуживание. Гарантия 5 лет.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <div class="logo">
+            <span class="logo__icon">💧</span>
+            <div>
+                <div class="logo__title">АкваИнжПроект</div>
+                <div class="logo__subtitle">надёжные системы водоснабжения</div>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#works" class="nav__link">Примеры работ</a>
+            <a href="#about" class="nav__link">О компании</a>
+            <a href="#contact" class="nav__link">Контакты</a>
+            <a href="#prices" class="nav__link">Цены</a>
+        </nav>
+        <div class="header__contacts">
+            <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+            <button class="btn btn--outline" id="callbackBtn">Заказать звонок</button>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__inner">
+            <a href="#services" class="mobile-menu__link">Услуги</a>
+            <a href="#works" class="mobile-menu__link">Примеры работ</a>
+            <a href="#about" class="mobile-menu__link">О компании</a>
+            <a href="#contact" class="mobile-menu__link">Контакты</a>
+            <a href="#prices" class="mobile-menu__link">Цены</a>
+            <a href="tel:+74951234567" class="mobile-menu__link mobile-menu__phone">📞 +7 (495) 123-45-67</a>
+            <button class="btn btn--primary mobile-menu__btn" id="mobileCallbackBtn">Заказать звонок</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__label">Профессиональный подход</div>
+            <h1 class="hero__title">Водоснабжение <br><span class="hero__accent">для жизни и бизнеса</span></h1>
+            <p class="hero__text">Проектируем, монтируем и обслуживаем системы водоснабжения с 2012 года. Гарантия 5 лет на все виды работ.</p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary" id="mainActionBtn">Смотреть цены →</button>
+                <button class="btn btn--secondary" id="moreBtn">Как мы работаем</button>
+            </div>
+            <div class="hero__stats">
+                <div class="stat"><span class="stat__number">500+</span> <span class="stat__text">объектов</span></div>
+                <div class="stat"><span class="stat__number">24/7</span> <span class="stat__text">аварийная служба</span></div>
+                <div class="stat"><span class="stat__number">5 лет</span> <span class="stat__text">гарантии</span></div>
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="https://placehold.co/600x500/eef2f6/1a4d8c?text=Схема+водоснабжения" alt="Схема водоснабжения дома" class="hero__img">
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Прайс</span>
+            <h2 class="section-title">Услуги и фиксированные цены</h2>
+            <p class="section-desc">Никаких скрытых платежей — только то, что указано в смете</p>
+        </div>
+        <div class="services__grid">
+            <div class="service-item"><div class="service-item__icon">🔍</div><h3>Проектирование</h3><p>3D-схемы, гидравлические расчёты</p><div class="service-item__price">от 15 000 ₽</div><button class="service-item__btn">Заказать</button></div>
+            <div class="service-item"><div class="service-item__icon">🔧</div><h3>Монтаж под ключ</h3><p>Скважины, насосные станции</p><div class="service-item__price">от 85 000 ₽</div><button class="service-item__btn">Заказать</button></div>
+            <div class="service-item"><div class="service-item__icon">🛠️</div><h3>Ремонт и замена</h3><p>Трубы, фитинги, арматура</p><div class="service-item__price">от 5 000 ₽</div><button class="service-item__btn">Заказать</button></div>
+            <div class="service-item"><div class="service-item__icon">⏱️</div><h3>Аварийная служба</h3><p>Выезд за 2 часа</p><div class="service-item__price">от 3 500 ₽</div><button class="service-item__btn">Вызвать</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="prices" id="prices">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Прайс-лист</span>
+            <h2 class="section-title">Утверждённые цены на скважины</h2>
+            <p class="section-desc">Все цены фиксированные — никаких скрытых платежей и сюрпризов</p>
+        </div>
+        <div class="prices__grid">
+            <div class="price-card price-card--popular">
+                <div class="price-card__badge">Самый популярный</div>
+                <h3>Скважина "Дачная"</h3>
+                <div class="price-card__value">85 000 ₽</div>
+                <ul class="price-card__list"><li>✔️ Глубина до 50 метров</li><li>✔️ Обсадная труба 125 мм</li><li>✔️ Насос в комплекте</li><li>✔️ Гарантия 5 лет</li></ul>
+                <button class="btn btn--primary price-card__btn">Заказать</button>
+            </div>
+            <div class="price-card">
+                <h3>Скважина "Оптимальная"</h3>
+                <div class="price-card__value">125 000 ₽</div>
+                <ul class="price-card__list"><li>✔️ Глубина до 80 метров</li><li>✔️ Обсадная труба 160 мм</li><li>✔️ Насос + гидроаккумулятор</li><li>✔️ Гарантия 5 лет</li></ul>
+                <button class="btn btn--primary price-card__btn">Заказать</button>
+            </div>
+            <div class="price-card">
+                <h3>Скважина "Премиум"</h3>
+                <div class="price-card__value">185 000 ₽</div>
+                <ul class="price-card__list"><li>✔️ Глубина до 120 метров</li><li>✔️ Обсадная труба 200 мм</li><li>✔️ Автоматика + кессон</li><li>✔️ Гарантия 5 лет</li></ul>
+                <button class="btn btn--primary price-card__btn">Заказать</button>
+            </div>
+        </div>
+        <div class="prices__additional">
+            <h3>Дополнительные работы</h3>
+            <div class="additional-grid">
+                <div class="additional-item"><span>Монтаж насосной станции</span><strong>12 000 ₽</strong></div>
+                <div class="additional-item"><span>Замена труб (за п.м.)</span><strong>1 500 ₽</strong></div>
+                <div class="additional-item"><span>Установка фильтров</span><strong>8 500 ₽</strong></div>
+                <div class="additional-item"><span>Аварийный выезд мастера</span><strong>3 500 ₽</strong></div>
+                <div class="additional-item"><span>Проектирование водоснабжения</span><strong>15 000 ₽</strong></div>
+                <div class="additional-item"><span>Обслуживание скважины (год)</span><strong>7 000 ₽</strong></div>
+            </div>
+        </div>
+        <div class="prices__note">⚡ Все цены указаны с учётом материалов и работы. Без скрытых наценок.</div>
+    </div>
+</section>
+
+<section class="works" id="works">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Портфолио</span>
+            <h2 class="section-title">Примеры наших работ</h2>
+            <p class="section-desc">Реальные объекты, которые мы уже подключили к воде</p>
+        </div>
+        <div class="works__grid">
+            <div class="work-card">
+                <img src="https://placehold.co/400x250/eef2f6/2E7D64?text=Коттедж+в+Истре" alt="Коттедж в Истре">
+                <div class="work-card__info">
+                    <h3>Коттедж в Истре</h3>
+                    <p>Скважина 65 метров, монтаж насосной станции, разводка по дому</p>
+                    <div class="work-card__price">Стоимость: 127 000 ₽</div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://placehold.co/400x250/eef2f6/2E7D64?text=Дача+в+Красногорске" alt="Дача в Красногорске">
+                <div class="work-card__info">
+                    <h3>Дача в Красногорске</h3>
+                    <p>Скважина 35 метров, летний водопровод, насос "Малыш"</p>
+                    <div class="work-card__price">Стоимость: 78 000 ₽</div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://placehold.co/400x250/eef2f6/2E7D64?text=ТЦ+Северный" alt="Торговый центр">
+                <div class="work-card__info">
+                    <h3>Торговый центр "Северный"</h3>
+                    <p>Проектирование, монтаж водоснабжения и пожаротушения</p>
+                    <div class="work-card__price">Стоимость: договорная</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container about__inner">
+        <div class="about__content">
+            <span class="section-tag">О нас</span>
+            <h2>Работаем с 2012 года</h2>
+            <p>АкваИнжПроект — команда инженеров и монтажников с опытом более 10 лет. Мы специализируемся на системах водоснабжения любой сложности: от дачной скважины до водоснабжения жилых комплексов.</p>
+            <div class="about__features"><div class="about-feature">✔️ Свои бригады — без посредников</div><div class="about-feature">✔️ Гарантия 5 лет на все работы</div><div class="about-feature">✔️ Работаем по договору с чеком</div><div class="about-feature">✔️ Фотоотчёт каждого этапа</div></div>
+        </div>
+        <div class="about__image"><img src="https://placehold.co/500x400/eef2f6/1a4d8c?text=Наша+команда" alt="Наша команда"></div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <div class="section-header"><span class="section-tag">Доверие</span><h2 class="section-title">Что говорят наши клиенты</h2></div>
+        <div class="reviews__grid">
+            <div class="review-card"><div class="review-card__rating">★★★★★</div><p class="review-card__text">«Сделали водопровод в загородном доме. Очень довольны — давление стабильное, вода чистая. Всё чётко, без скрытых платежей.»</p><div class="review-card__author">Андрей, коттедж в Истре</div></div>
+            <div class="review-card"><div class="review-card__rating">★★★★★</div><p class="review-card__text">«Как УК обращались по замене стояков. Работы выполнены быстро, жильцы не жаловались. Акты и допуски в порядке.»</p><div class="review-card__author">Ольга, ТСЖ «Северное»</div></div>
+        </div>
+    </div>
+</section>
+
+<<!-- ОБЩИЙ БЛОК КОНТАКТОВ (телефон, email, MAX, Telegram) -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Связь</span>
+            <h2 class="section-title">Наши контакты</h2>
+            <p class="section-desc">Свяжитесь с нами удобным для вас способом</p>
+        </div>
+        
+        <div class="contact__grid">
+            <!-- Телефон -->
+            <div class="contact-card">
+                <div class="contact-card__icon">📞</div>
+                <h3>Позвоните нам</h3>
+                <a href="tel:+74951234567" class="contact-card__link">+7 (495) 123-45-67</a>
+                <p>Ежедневно с 9:00 до 20:00</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="contact-card__icon">✉️</div>
+                <h3>Напишите на почту</h3>
+                <a href="mailto:info@aquainzh.ru" class="contact-card__link">info@aquainzh.ru</a>
+                <p>Ответим в течение 2 часов</p>
+            </div>
+
+            <!-- MAX (российский мессенджер) -->
+            <div class="contact-card contact-card--max">
+                <div class="contact-card__icon">💬</div>
+                <h3>Напишите в MAX</h3>
+                <a href="https://max.ru/chat?phone=79991234567" target="_blank" class="contact-card__link contact-card__link--max">Написать в MAX →</a>
+                <p>Российский мессенджер, быстро и удобно</p>
+            </div>
+
+        <!-- Форма обратной связи -->
+        <div class="contact__form-wrapper">
+            <h3>Или оставьте заявку</h3>
+            <form class="contact__form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <textarea rows="3" placeholder="Опишите задачу"></textarea>
+                <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                <small class="form-note">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</small>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__copy">© 2025 АкваИнжПроект — профессиональное водоснабжение</div>
+        <div class="footer__links"><a href="#">Политика конфиденциальности</a><a href="#">Карта сайта</a></div>
+    </div>
+</footer>
+
+<a href="https://wa.me/74951234567?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20водоснабжении" target="_blank" class="whatsapp-fixed">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.031 2.016c-5.484 0-9.984 4.5-9.984 9.984 0 1.828.5 3.563 1.359 5.063l-1.406 4.922 5.063-1.406c1.5.859 3.234 1.359 5.063 1.359 5.484 0 9.984-4.5 9.984-9.984s-4.5-9.938-9.984-9.938zM12.031 21a8.6 8.6 0 0 1-4.5-1.266l-3.328.938.938-3.281A8.8 8.8 0 0 1 3 12.047c0-4.969 4.031-9 9-9s9 4.031 9 9-4.031 9-9 9z"/>
+        <path d="M17.156 14.484c-.281.703-1.641 1.359-2.297 1.453-.656.094-1.266.188-2.766-.609-1.5-.797-2.766-2.484-3.141-3.094-.328-.563-.703-1.5-.188-2.297.516-.797.703-.797 1.078-.797s.563.047.797.422c.188.281.656 1.125.797 1.406.141.281.188.563-.094.891-.234.281-.422.469-.656.703-.188.188-.422.375-.188.703.234.328 1.078 1.781 2.297 2.484 1.219.703 1.406.516 1.688.328.281-.188 1.125-.938 1.406-1.266.281-.328.516-.234.797-.094s1.5.703 1.641.891c.141.188.141.516-.094 1.078z"/>
+    </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
