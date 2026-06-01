@@ -17,8 +17,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ========== МОБИЛЬНОЕ МЕНЮ ==========
+// Мобильное меню (обновленное)
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
 const mobileMenu = document.getElementById('mobileMenu');
 let overlay = document.querySelector('.overlay');
 
@@ -47,9 +48,12 @@ function closeMobileMenu() {
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', openMobileMenu);
 }
+if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+}
 overlay.addEventListener('click', closeMobileMenu);
 
-// Закрываем меню при клике на любую ссылку внутри него
+// Закрываем меню при клике на любую ссылку
 document.querySelectorAll('.mobile-menu__link').forEach(link => {
     link.addEventListener('click', closeMobileMenu);
 });
