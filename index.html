@@ -19,28 +19,58 @@
                 <div class="logo__subtitle">надёжные системы водоснабжения</div>
             </div>
         </div>
+        
+        <!-- Десктопное меню -->
         <nav class="nav">
             <a href="#services" class="nav__link">Услуги</a>
-            <a href="#works" class="nav__link">Примеры работ</a>
+            <a href="#works" class="nav__link">Услуги</a>
             <a href="#about" class="nav__link">О компании</a>
             <a href="#contact" class="nav__link">Контакты</a>
             <a href="#prices" class="nav__link">Цены</a>
         </nav>
+        
         <div class="header__contacts">
             <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
             <button class="btn btn--outline" id="callbackBtn">Заказать звонок</button>
         </div>
+        
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
     </div>
+    
+    <!-- Мобильное меню (полностью переделанное) -->
     <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <span class="mobile-menu__title">Меню</span>
+            <button class="mobile-menu__close" id="mobileMenuClose">✕</button>
+        </div>
         <div class="mobile-menu__inner">
-            <a href="#services" class="mobile-menu__link">Услуги</a>
-            <a href="#works" class="mobile-menu__link">Примеры работ</a>
-            <a href="#about" class="mobile-menu__link">О компании</a>
-            <a href="#contact" class="mobile-menu__link">Контакты</a>
-            <a href="#prices" class="mobile-menu__link">Цены</a>
-            <a href="tel:+74951234567" class="mobile-menu__link mobile-menu__phone">📞 +7 (495) 123-45-67</a>
-            <button class="btn btn--primary mobile-menu__btn" id="mobileCallbackBtn">Заказать звонок</button>
+            <a href="#services" class="mobile-menu__link">
+                <span class="mobile-menu__icon">🔧</span>
+                Услуги
+            </a>
+            <a href="#works" class="mobile-menu__link">
+                <span class="mobile-menu__icon">📋</span>
+                Примеры работ
+            </a>
+            <a href="#about" class="mobile-menu__link">
+                <span class="mobile-menu__icon">🏢</span>
+                О компании
+            </a>
+            <a href="#prices" class="mobile-menu__link">
+                <span class="mobile-menu__icon">💰</span>
+                Цены
+            </a>
+            <a href="#contact" class="mobile-menu__link">
+                <span class="mobile-menu__icon">📞</span>
+                Контакты
+            </a>
+            <div class="mobile-menu__divider"></div>
+            <a href="tel:+74951234567" class="mobile-menu__phone">
+                📞 +7 (495) 123-45-67
+            </a>
+            <button class="btn btn--primary mobile-menu__btn" id="mobileCallbackBtn">
+                Заказать звонок
+            </button>
         </div>
     </div>
 </header>
