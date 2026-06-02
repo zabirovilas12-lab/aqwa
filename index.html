@@ -244,6 +244,38 @@
         </div>
     </div>
 </section>
+<!-- ФОРМА ОТПРАВКИ ОТЗЫВА -->
+<section class="review-form">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Оставить отзыв</span>
+            <h2 class="section-title">Поделитесь впечатлениями</h2>
+            <p class="section-desc">Нам важно ваше мнение о нашей работе</p>
+        </div>
+        
+        <div class="review-form__wrapper">
+            <form id="reviewForm">
+                <div class="form-row">
+                    <input type="text" id="reviewName" placeholder="Ваше имя" required>
+                    <div class="rating-area">
+                        <span class="rating-label">Ваша оценка:</span>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                        </div>
+                    </div>
+                </div>
+                <textarea id="reviewText" rows="4" placeholder="Расскажите о вашем опыте работы с нами" required></textarea>
+                <button type="submit" class="btn btn--primary">Отправить отзыв</button>
+                <small class="form-note">Отзывы публикуются после модерации</small>
+            </form>
+            <div id="reviewStatus" style="display: none; margin-top: 15px; padding: 12px; border-radius: 10px; text-align: center;"></div>
+        </div>
+    </div>
+</section>
 
 <!-- КОНТАКТЫ -->
 <section class="contact" id="contact">
