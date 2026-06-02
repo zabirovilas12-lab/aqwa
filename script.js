@@ -50,3 +50,83 @@ callbackBtns.forEach(btn => {
         btn.addEventListener('click', () => scrollToElement('contact'));
     }
 });
+// ========== ОТПРАВКА ОТЗЫВОВ ==========
+const reviewForm = document.getElementById('reviewForm');
+const reviewStatus = document.getElementById('reviewStatus');
+
+if (reviewForm) {
+    reviewForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('reviewName')?.value.trim();
+        const rating = document.querySelector('input[name="rating"]:checked')?.value;
+        const text = document.getElementById('reviewText')?.value.trim();
+        
+        if (!name || !text) {
+            showReviewStatus('⚠️ Заполните имя и текст отзыва', 'error');
+            return;
+        }
+        
+        if (!rating) {
+            showReviewStatus('⚠️ Поставьте оценку звёздами', 'error');
+            return;
+        }
+        
+        const submitBtn = reviewForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = '⏳ Отправка...';
+        submitBtn.disabled = true;
+        
+        // Отправляем на FormSubmit (можно потом перенастроить на PHP)
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('rating', rating);
+        formData.append('review', text);
+        formData.append('_subject', 'Новый отзыв на сайте');
+        
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/ВАША_ПОЧТА@yandex.ru', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (response.ok) {
+                showReviewStatus('✅ Спасибо за отзыв! Он будет опубликован после проверки.', 'success');
+                reviewForm.reset();
+                // Сброс звёзд (визуально)
+                document.querySelectorAll('.stars input').forEach(star => star.checked = false);
+            } else {
+                showReviewStatus('❌ Ошибка отправки. Попробуйте позже.', 'error');
+            }
+        } catch (error) {
+            showReviewStatus('❌ Ошибка отправки. Попробуйте позже.', 'error');
+        }
+        
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        
+        setTimeout(() => {
+            if (reviewStatus) reviewStatus.style.display = 'none';
+        }, 5000);
+    });
+}
+
+function showReviewStatus(text, type) {
+    if (!reviewStatus) return;
+    reviewStatus.style.display = 'block';
+    reviewStatus.textContent = text;
+    
+    if (type === 'success') {
+        reviewStatus.style.backgroundColor = '#E8F5F0';
+        reviewStatus.style.color = '#2E7D64';
+        reviewStatus.style.border = '1px solid #2E7D64';
+    } else if (type === 'error') {
+        reviewStatus.style.backgroundColor = '#FEE2E2';
+        reviewStatus.style.color = '#DC2626';
+        reviewStatus.style.border = '1px solid #DC2626';
+    } else {
+        reviewStatus.style.backgroundColor = '#F0F4F8';
+        reviewStatus.style.color = '#1E2A3A';
+        reviewStatus.style.border = '1px solid #CBD5E1';
+    }
+}
